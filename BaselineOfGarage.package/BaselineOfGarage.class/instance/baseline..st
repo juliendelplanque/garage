@@ -4,13 +4,8 @@ baseline: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
-		spec 
-			project: 'JSON' with: [
-				spec
-					className: #ConfigurationOfJSON;
-					versionString: '1.1';
-					repository: 'http://smalltalkhub.com/mc/PharoExtras/JSON/main/' ].
-		spec 
+		spec
+			package: 'JSON';
 			package: 'Garage';
 			package: 'Garage-Mysql' with: [ spec requires: #('Garage' ) ];
 			package: 'Garage-Sqlite3' with: [spec requires: #('Garage' )];
